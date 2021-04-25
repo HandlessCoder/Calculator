@@ -7,9 +7,14 @@ function getData(ref) {
 
 window.onload = function (){
     let bgPath = './img/bg/';
-    let bgQuantity = 2;
+    let bgQuantity = 3;
     let num = Math.round(Math.random()*(bgQuantity-1));
     document.getElementById('body').style.backgroundImage= `url(${bgPath}bg${num}.jpg)`;
+
+    setTimeout(()=>{
+        document.getElementById('contenedor_carga').style.visibility="hidden";
+        document.getElementById('contenedor_carga').style.opacity='0';
+    },1500);
 }
 
 

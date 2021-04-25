@@ -15,7 +15,7 @@
     <div class="content-body" id="body">
         <div class="content-calculator">
             <div class="screen">
-                <input type="text" disabled placeholder="0" id="screen-result">
+                <input type="text" readonly="readonly" autofocus placeholder="0" id="screen-result">
             </div>
             <div class="btn-cal btn-cal-radius btn-clean">
                 <input type="button" value="C" class="clean" onclick="clean()">
@@ -71,7 +71,6 @@
             <div class="btn-cal btn-cal-radius">
                 <input type="button" value="0" onclick="getData(this)">
             </div>
-
             <div class="btn-cal btn-cal-radius btn-backspace">
                 <input type="button" value="⌫" class="backspace" onclick="backspace()">
             </div>

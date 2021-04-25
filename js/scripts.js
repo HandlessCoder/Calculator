@@ -1,8 +1,10 @@
 var screen = document.getElementById("screen-result");
 
+
 function getData(ref) {
     let value = ref.value;
     screen.value+=value;
+    screen.focus();
 }
 
 window.onload = function (){
@@ -16,7 +18,6 @@ window.onload = function (){
         document.getElementById('contenedor_carga').style.opacity='0';
     },1500);
 }
-
 
 function clean(){
     screen.value="";
